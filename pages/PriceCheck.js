@@ -116,7 +116,6 @@ const PriceCheck=()=>{
         }
     }
 
-
     return(
         <div>
             <Head>
@@ -160,7 +159,6 @@ const PriceCheck=()=>{
             </div>
             <div class='downContainer'></div>
         </div>
-
     )
 }
 export default PriceCheck

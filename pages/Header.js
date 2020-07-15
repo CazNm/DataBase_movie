@@ -129,7 +129,7 @@ const Header = () => {
                                 <a name='/Mypage' onClick={getMethodM}> 마이페이지 </a>
                             </li>
                             <li>
-                                {admin ? <Link name='gotoAdmin' href="http://localhost:3000"> 관리자페이지 </Link> :<></>}
+                                {admin ? <a name='gotoAd min'href="http://localhost:3000"> 관리자페이지 </a> :<></>}
                             </li>
                         </ul>
                     </nav>
