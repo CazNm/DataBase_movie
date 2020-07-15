@@ -316,8 +316,8 @@ app.prepare().then(() => {
         return handle(req, res);
     });
     
-    server.listen(8080, err => {
+    server.listen(9000, err => {
         if (err) throw err
-        console.log(`> Ready on https://localhost:8080`);
+        console.log(`> Ready on https://localhost:9000`);
       })
 });
