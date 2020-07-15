@@ -14,7 +14,7 @@ const mysql = require("mysql2/promise");
 const pool = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "Cho641164!",
+    password: "1234",
     database: "movie"
 });
 
@@ -312,8 +312,8 @@ app.prepare().then(() => {
         return handle(req, res);
     });
     
-    server.listen(9090, err => {
+    server.listen(3000, err => {
         if (err) throw err
-        console.log(`> Ready on http://localhost:9090`);
+        console.log(`> Ready on http://localhost:3000`);
       })
 });
