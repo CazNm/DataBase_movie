@@ -88,6 +88,9 @@ const Reservation = () => {
         else if (choose_movie === 'knivesOut') {
             korean_name = '나이브스아웃'
         }
+        else if (choose_movie === 'ford') {
+            korean_name = '포드V페라리(자막)'
+        }
     }
 
     function checkHandler(){
@@ -147,6 +150,7 @@ const Reservation = () => {
                 movie: korean_name
             }
         }).then( (res) => {
+            console.log(localStorage)
             localStorage.setItem('theater_id', res.data.theater_num)
             localStorage.setItem('movie_id', res.data.movie_id)
             localStorage.setItem('branch', choose_branch)
@@ -229,7 +233,7 @@ const Reservation = () => {
                 </div>
                 <div class="ex">
                     <BranchOption onClick={setChooseBranch} number={'서울대입구'} choose_branch={choose_branch}>서울대입구</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'브로드웨이(신사)'} choose_branch={choose_branch}>신사</BranchOption>
+                    <BranchOption onClick={setChooseBranch} number={'신사'} choose_branch={choose_branch}>신사</BranchOption>
                 </div>
                 <div class="ex">
                     <BranchOption onClick={setChooseBranch} number={'수유'} choose_branch={choose_branch}>수유</BranchOption>
@@ -250,7 +254,7 @@ const Reservation = () => {
         <div class="scroll">
                 <MovieOption onClick={setChooseMovie} number={'frozen2'} choose_movie={choose_movie}>겨울왕국2(자막)</MovieOption>
                 <MovieOption onClick={() => {alert('준비중입니다.')}} number={'frozen2_sub'} choose_movie={choose_movie}>겨울왕국2(더빙)</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'포드V페라리(자막)'} choose_movie={choose_movie}>포드V페라리(자막)</MovieOption>
+                <MovieOption onClick={setChooseMovie} number={'ford'} choose_movie={choose_movie}>포드V페라리(자막)</MovieOption>
                 <MovieOption onClick={setChooseMovie} number={'knivesOut'} choose_movie={choose_movie}>나이브스 아웃(자막)</MovieOption>
                 <MovieOption onClick={() => {alert('준비중입니다.')}} number={'감쪽같은 그녀'} choose_movie={choose_movie}>감쪽같은 그녀</MovieOption>
                 <MovieOption onClick={() => {alert('준비중입니다.')}} number={'라스트 크리스마스'} choose_movie={choose_movie}>라스트 크리스마스</MovieOption>

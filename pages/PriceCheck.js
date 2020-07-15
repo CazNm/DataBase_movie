@@ -76,6 +76,8 @@ const PriceCheck=()=>{
                 }
             }).then( (res) => {
                 const check = res.data.bool;
+                localStorage.removeItem('movie_id');
+                localStorage.removeItem('count');
                 if(check){
                     alert('예매가 완료되었습니다');
                     router.push({pathname: '/' });

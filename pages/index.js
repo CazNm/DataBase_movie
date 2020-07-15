@@ -15,6 +15,7 @@ const index = () => {
     const [rescent, getRecent] = useState('');
     const [logStat, setStat] = useState(false);
 
+
     useEffect(() => {
 
         if(localStorage.getItem('usrID') !== null){

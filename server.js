@@ -224,6 +224,10 @@ app.prepare().then(() => {
         var page = "/seat_reserve";
         var result_id;
 
+        console.log(c_movie);
+        console.log(c_time);
+        console.log(c_branch);
+
         const connection = await pool.getConnection(async conn => conn);
         const [result] = await connection.query(query, [c_movie, c_time, c_branch]);
         result_id = result;
