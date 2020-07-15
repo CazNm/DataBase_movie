@@ -224,285 +224,40 @@ const Reservation = () => {
                 <div class="ex">
                     <BranchOption onClick={setChooseBranch} number={'가산디지털'} choose_branch={choose_branch}>가산디지털</BranchOption>
                     {/* <p class={toggle ? "pink":"store"} onClick={() => setToggle(!toggle)} >가산디지털</p> */}
-                    <BranchOption onClick={setChooseBranch} number={'가양'} choose_branch={choose_branch}>가양</BranchOption>
-                </div>
-                <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'강동'} choose_branch={choose_branch}>강동</BranchOption>
                     <BranchOption onClick={setChooseBranch} number={'건대입구'} choose_branch={choose_branch}>건대입구</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'김포공항'} choose_branch={choose_branch}>김포공항</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'노원'} choose_branch={choose_branch}>노원</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'녹산'} choose_branch={choose_branch}>녹산</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'브로드웨이(신사)'} choose_branch={choose_branch}>브로드웨이(신사)</BranchOption>
+
                 </div>
                 <div class="ex">
                     <BranchOption onClick={setChooseBranch} number={'서울대입구'} choose_branch={choose_branch}>서울대입구</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'수락산'} choose_branch={choose_branch}>수락산</BranchOption>
+                    <BranchOption onClick={setChooseBranch} number={'브로드웨이(신사)'} choose_branch={choose_branch}>신사</BranchOption>
                 </div>
                 <div class="ex">
                     <BranchOption onClick={setChooseBranch} number={'수유'} choose_branch={choose_branch}>수유</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'신도림'} choose_branch={choose_branch}>신도림</BranchOption>
+                    <BranchOption onClick={() => {alert('준비중입니다.')}} number={'신도림'} choose_branch={choose_branch}>신도림</BranchOption>
                 </div>
                 <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'신림'} choose_branch={choose_branch}>신림</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'에비뉴엘(명동)'} choose_branch={choose_branch}>에비뉴엘(명동)</BranchOption>
+                    <BranchOption onClick={() => {alert('준비중입니다.')}} number={'신림'} choose_branch={choose_branch}>신림</BranchOption>
+                    <BranchOption onClick={() => {alert('준비중입니다.')}} number={'에비뉴엘(명동)'} choose_branch={choose_branch}>명동</BranchOption>
                 </div>
                 <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'영등포'} choose_branch={choose_branch}>영등포</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'용산'} choose_branch={choose_branch}>용산</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'월드타워'} choose_branch={choose_branch}>월드타워</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'은평(롯데몰)'} choose_branch={choose_branch}>은평(롯데몰)</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'장안'} choose_branch={choose_branch}>장안</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'청량리'} choose_branch={choose_branch}>청량리</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'합정'} choose_branch={choose_branch}>합정</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'홍대입구'} choose_branch={choose_branch}>홍대입구</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'황학'} choose_branch={choose_branch}>황학</BranchOption>
+                    <BranchOption onClick={() => {alert('준비중입니다.')}} number={'영등포'} choose_branch={choose_branch}>영등포</BranchOption>
+                    <BranchOption onClick={() => {alert('준비중입니다.')}} number={'용산'} choose_branch={choose_branch}>용산</BranchOption>
                 </div>
             </div>
-    )
-
-    const gyeonggi = (
-        <div class="scroll">
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'검단'} choose_branch={choose_branch}>검단</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'광교아울렛'} choose_branch={choose_branch}>광교아울렛</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'광주터미널'} choose_branch={choose_branch}>광주터미널</BranchOption> 
-                <BranchOption onClick={setChooseBranch} number={'구리아울렛'} choose_branch={choose_branch}>구리아울렛</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'병점'} choose_branch={choose_branch}>병점</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'부천(신중동역)'} choose_branch={choose_branch}>부천(신중동역)</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'부평역사'} choose_branch={choose_branch}>부평역사</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'산본피트인'} choose_branch={choose_branch}>산본피트인</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'성남중앙(신흥역)'} choose_branch={choose_branch}>성남중앙(신흥역)</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'센트럴락'} choose_branch={choose_branch}>센트럴락</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'수지'} choose_branch={choose_branch}>수지</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'시화'} choose_branch={choose_branch}>시화</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'안성'} choose_branch={choose_branch}>안성</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'안양(안양역)'} choose_branch={choose_branch}>안양(안양역)</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'안양일번가'} choose_branch={choose_branch}>안양일번가</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'양주고읍'} choose_branch={choose_branch}>양주고읍</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'용인기흥'} choose_branch={choose_branch}>용인기흥</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'용인역북'} choose_branch={choose_branch}>용인역북</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'인덕원'} choose_branch={choose_branch}>인덕원</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'인천아시아드'} choose_branch={choose_branch}>인천아시아드</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'진접'} choose_branch={choose_branch}>진접</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'파주아울렛'} choose_branch={choose_branch}>파주아울렛</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'파주운정'} choose_branch={choose_branch}>파주운정</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'평촌(범계역)'} choose_branch={choose_branch}>평촌(범계역)</BranchOption>
-            </div>
-        </div>
-    )
-    
-
-    const daejeon = (
-        <div class="scroll">
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'대전(백화점)'} choose_branch={choose_branch}>대전(백화점)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'대전둔산(월평동)'} choose_branch={choose_branch}>대전둔산(월평동)</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'대전센트럴'} choose_branch={choose_branch}>대전센트럴</BranchOption> 
-                    <BranchOption onClick={setChooseBranch} number={'서산'} choose_branch={choose_branch}>서산</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'서청주(아울렛)'} choose_branch={choose_branch}>서청주(아울렛)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'아산터미널'} choose_branch={choose_branch}>아산터미널</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'청주(성안길)'} choose_branch={choose_branch}>청주(성안길)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'청주용암'} choose_branch={choose_branch}>청주용암</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'충주'} choose_branch={choose_branch}>충주</BranchOption>
-                </div>     
-        </div>        
-
-    )
-
-    const gwangju = (
-        <div class="scroll">
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'광주(백화점)'} choose_branch={choose_branch}>광주(백화점)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'광주광산'} choose_branch={choose_branch}>광주광산</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'군산나운'} choose_branch={choose_branch}>군산나운</BranchOption> 
-                    <BranchOption onClick={setChooseBranch} number={'군산몰'} choose_branch={choose_branch}>군산몰</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'수완(아울렛)'} choose_branch={choose_branch}>수완(아울렛)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'익산모현'} choose_branch={choose_branch}>익산모현</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'전주(백화점)'} choose_branch={choose_branch}>전주(백화점)</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'전주평화'} choose_branch={choose_branch}>전주평화</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'충장로'} choose_branch={choose_branch}>충장로</BranchOption>
-                </div>     
-        </div>        
-    )
-
-    const daegu = (
-        <div class="scroll">
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'경산'} choose_branch={choose_branch}>경산</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'경주'} choose_branch={choose_branch}>경주</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'구미 프라임 1번가'} choose_branch={choose_branch}>구미 프라임 1번가</BranchOption> 
-                    <BranchOption onClick={setChooseBranch} number={'구미공단'} choose_branch={choose_branch}>구미공단</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'대구광장'} choose_branch={choose_branch}>대구광장</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'대구율하'} choose_branch={choose_branch}>대구율하</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'대구현풍'} choose_branch={choose_branch}>대구현풍</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'동성로'} choose_branch={choose_branch}>동성로</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'상인'} choose_branch={choose_branch}>상인</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'성서'} choose_branch={choose_branch}>성서</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'영주'} choose_branch={choose_branch}>영주</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'포항'} choose_branch={choose_branch}>포항</BranchOption>
-                </div>    
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'프리미엄구미센트럴'} choose_branch={choose_branch}>프리미엄구미센트럴</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'프리미엄만경'} choose_branch={choose_branch}>프리미엄만경</BranchOption>
-                </div>
-                <div class="ex">
-                    <BranchOption onClick={setChooseBranch} number={'프리미엄안동'} choose_branch={choose_branch}>프리미엄안동</BranchOption>
-                    <BranchOption onClick={setChooseBranch} number={'프리미엄칠곡'} choose_branch={choose_branch}>프리미엄칠곡</BranchOption>
-                </div>
-        </div>
-    )
-
-    const busan = (
-        <div class="scroll">
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'광복'} choose_branch={choose_branch}>광복</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'김해부원'} choose_branch={choose_branch}>김해부원</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'김해아울렛(장유)'} choose_branch={choose_branch}>김해아울렛(장유)</BranchOption> 
-                <BranchOption onClick={setChooseBranch} number={'대영'} choose_branch={choose_branch}>대영</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'동래'} choose_branch={choose_branch}>동래</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'동부산아울렛'} choose_branch={choose_branch}>동부산아울렛</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'마산터미널'} choose_branch={choose_branch}>마산터미널</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'부산본점'} choose_branch={choose_branch}>부산본점</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'사상'} choose_branch={choose_branch}>사상</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'서면'} choose_branch={choose_branch}>서면</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'센텀시티'} choose_branch={choose_branch}>센텀시티</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'엠비씨네'} choose_branch={choose_branch}>엠비씨네</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'오투(부산대)'} choose_branch={choose_branch}>오투(부산대)</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'울산(백화점)'} choose_branch={choose_branch}>울산(백화점)</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'울산성남'} choose_branch={choose_branch}>울산성남</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'진주혁신'} choose_branch={choose_branch}>진주혁신</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'잔해'} choose_branch={choose_branch}>잔해</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'창원'} choose_branch={choose_branch}>창원</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'통영'} choose_branch={choose_branch}>통영</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'프리미엄경남대'} choose_branch={choose_branch}>프리미엄경남대</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'프리미엄진주'} choose_branch={choose_branch}>프리미엄진주</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'프리미엄해운대'} choose_branch={choose_branch}>프리미엄해운대</BranchOption>
-            </div>
-        </div>
-    )
-
-    const gangwon = (
-        <div class="scroll">
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'남원주'} choose_branch={choose_branch}>남원주</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'동해'} choose_branch={choose_branch}>동해</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'원주무실'} choose_branch={choose_branch}>원주무실</BranchOption> 
-            </div>                                    
-        </div>
-    )
-
-    const jeju = (
-        <div class="scroll">
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'서귀포'} choose_branch={choose_branch}>서귀포</BranchOption>
-                <BranchOption onClick={setChooseBranch} number={'제주삼화지구'} choose_branch={choose_branch}>제주삼화지구</BranchOption>
-            </div>
-            <div class="ex">
-                <BranchOption onClick={setChooseBranch} number={'제주아라'} choose_branch={choose_branch}>제주아라</BranchOption> 
-            </div>                                    
-        </div>
     )
 
     const movies=(
         <div class="scroll">
-                <MovieOption onClick={setChooseMovie} number={'시동'} choose_movie={choose_movie}>시동</MovieOption>
                 <MovieOption onClick={setChooseMovie} number={'frozen2'} choose_movie={choose_movie}>겨울왕국2(자막)</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'frozen2_sub'} choose_movie={choose_movie}>겨울왕국2(더빙)</MovieOption>
+                <MovieOption onClick={() => {alert('준비중입니다.')}} number={'frozen2_sub'} choose_movie={choose_movie}>겨울왕국2(더빙)</MovieOption>
                 <MovieOption onClick={setChooseMovie} number={'포드V페라리(자막)'} choose_movie={choose_movie}>포드V페라리(자막)</MovieOption>
                 <MovieOption onClick={setChooseMovie} number={'knivesOut'} choose_movie={choose_movie}>나이브스 아웃(자막)</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'감쪽같은 그녀'} choose_movie={choose_movie}>감쪽같은 그녀</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'라스트 크리스마스(자막)'} choose_movie={choose_movie}>라스트 크리스마스(자막)</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'아내를 죽였다'} choose_movie={choose_movie}>아내를 죽였다</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'블랙머니'} choose_movie={choose_movie}>블랙머니</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'쥬만지:넥스트레벨(자막)'} choose_movie={choose_movie}>쥬만지:넥스트레벨(자막)</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'프란시스코 교황:맨 오브 히스 워드(자막)'} choose_movie={choose_movie}>프란시스코 교황:맨 오브 히스 워드(자막)'</MovieOption>
-                <MovieOption onClick={setChooseMovie} number={'나를 찾아줘'} choose_movie={choose_movie}>나를 찾아줘</MovieOption>
+                <MovieOption onClick={() => {alert('준비중입니다.')}} number={'감쪽같은 그녀'} choose_movie={choose_movie}>감쪽같은 그녀</MovieOption>
+                <MovieOption onClick={() => {alert('준비중입니다.')}} number={'라스트 크리스마스'} choose_movie={choose_movie}>라스트 크리스마스</MovieOption>
         </div>
     )
 
-    const region_list=[seoul, gyeonggi, daejeon, gwangju, daegu, busan, gangwon, jeju]
+    const region_list=[seoul]
    
     const reservation=(
         <div>
@@ -555,13 +310,6 @@ const Reservation = () => {
                 <div class="make_choice"> 
                     <div class="choice">
                         <RegionOption onClick={setChooseRegion} number={'서울'} choose_region={choose_region}> <div onClick={()=> setRegion(0)}>서울</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'경기/인천'} choose_region={choose_region}> <div onClick={()=> setRegion(1)}>경기/인천</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'충청/대전'} choose_region={choose_region}> <div onClick={()=> setRegion(2)}>충청/대전</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'전라/광주'} choose_region={choose_region}> <div onClick={()=> setRegion(3)}>전라/광주</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'경북/대구'} choose_region={choose_region}> <div onClick={()=> setRegion(4)}>경북/대구</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'경남/부산/울산'} choose_region={choose_region}> <div onClick={()=> setRegion(5)}>경남/부산/울산</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'강원'} choose_region={choose_region}> <div onClick={()=> setRegion(6)}>강원</div></RegionOption>
-                        <RegionOption onClick={setChooseRegion} number={'제주'} choose_region={choose_region}> <div onClick={()=> setRegion(7)}>제주</div></RegionOption>
                     </div>
                     <div class="choice">
                         {region_list[region]}
